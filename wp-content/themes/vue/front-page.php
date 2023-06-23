@@ -11,7 +11,17 @@
 
 get_header();
 
-get_template_part('template-parts/content/content-posts');
+while ( have_posts() ) :
+	the_post(); ?>
+
+    <blog-listing-item title="<?php echo the_title(); ?>" >
+        <template #excerpt>
+            <?php echo the_excerpt(); ?>
+        </template>
+    </blog-listing-item>
+
+<?php endwhile; 
+
+// get_template_part('template-parts/content/content-posts');
 
 get_footer();
-
