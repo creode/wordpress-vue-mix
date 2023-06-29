@@ -11,6 +11,6 @@
 
 <script>
 export default {
-    props: ['title', 'content']
+    props: ['categories', 'title', 'content']
 }
 </script>
