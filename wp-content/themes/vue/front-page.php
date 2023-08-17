@@ -13,8 +13,8 @@ get_header();
 
 // get all categories 
 // $categories =  get_categories();
-
-
+?>
+<bens-card title="Hello World" excerpt="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 
 //while ( have_posts() ) :
 	//the_post(); ?>
@@ -27,6 +27,6 @@ get_header();
 
 <?php //endwhile;  ?>
 
-<?php get_template_part('template-parts/content/content-posts'); ?>
+<?php // get_template_part('template-parts/content/content-posts'); ?>
 
 <?php get_footer(); ?>

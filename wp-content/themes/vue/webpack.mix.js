@@ -1,3 +1,6 @@
 let mix = require('laravel-mix');
 
-mix.js('src/app.js', 'dist').setPublicPath('dist').vue();
+mix.js('src/app.js', 'dist')
+    .setPublicPath('dist')
+    .vue()
+    .sass('src/app.scss', 'dist');

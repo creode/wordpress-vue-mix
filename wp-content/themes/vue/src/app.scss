@@ -1,0 +1,7 @@
+@use "~creode-component-library/src/_teaser.scss" as *;
+
+@include teaser(2rem,
+    0.5,
+    30px,
+    grey,
+    0.5);
